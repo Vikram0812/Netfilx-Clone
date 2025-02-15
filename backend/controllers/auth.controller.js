@@ -54,7 +54,8 @@ export async function signup(req,res) {
             success:true, 
             user: {
             userData
-        }})
+                }
+        })
 
     } catch (error) {
         console.log("Error in signup controller",error.message)
@@ -95,7 +96,6 @@ export async function login(req,res) {
         res.status(500).json({success:false,message:"Internal server error"})
     }
 }
-
 
 export async function logout(req,res) {
     try {
